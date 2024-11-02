@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dark-mode{
+    color: #fff;
+    background-color: #000;
+}
+body {
+    font-family: "kumbh sans";
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+h1, h2{
+    font-family: "italiana";
+}
+section{
+    margin: 300px 0px;
+}
+.left-column {
+    width: 50%;
+    padding: 20px;
+}
+
+.right-column {
+    width: 50%;
+    background-color: #6A1B9A;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#darkmode{
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+}
+.ckbdmStyle{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.ckbdmStyle::before{
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    content: "\f185";
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    color: var(--branco);
+    background-color: var(--cinza);
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ckbDark:checked+.ckbdmStyle::before{
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    content: "\f186";
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    color: var(--cinza);
+    background-color: var(--branco);
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(360deg);
+}
+#ckbDark{
+    position: absolute;
+    opacity: 0;
+    height: 3em;
+    width: 3em;
+    z-index: 1000;
+    cursor: pointer;
+}
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.right-column {
+    background-color: #6A1B9A; /* Cor roxa da coluna direita */
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+footer{
+    background-color: #6A1B9A;
+     color: #fff;
+     width: 100%;
+}
